@@ -35,7 +35,7 @@ jobs:
         password: ${{ secrets.AYU_SERVER_PASS }}
         script: |
           pm2 delete all
-          cd /home
+          cd /home/english-games-with-ayu-api
           git pull
           npm install
           pm2 start index.js
