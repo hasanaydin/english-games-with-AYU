@@ -30,9 +30,9 @@ jobs:
     - name: SSH Remote Commands
       uses: appleboy/ssh-action@v0.1.5
       with:
-        key: ${{secrets.AYU_SERVER_SSH}}
-        host: ${{secrets.AYU_SERVER_IP}}
-        username: ${{secrets.AYU_SERVER_USERNAME}}
+        host: ${{ secrets.AYU_SERVER_IP }}
+        username: ${{ secrets.AYU_SERVER_USERNAME }}
+        password: ${{ secrets.AYU_SERVER_PASS }}
         script: |
           pm2 delete all
           cd /home
