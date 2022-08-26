@@ -1,0 +1,52 @@
+- user 
+	- getInfo
+		- user level
+		- user achievement
+	- login
+	- register
+	- forgatPassword
+	- resetPassword
+	- updateAvatar
+	- updateUsername
+	- complaintToUser
+
+- class
+	- getMyInfo
+	- setClass
+	- updateClass
+	- delClass
+	- inviteUser
+	- removeUser
+
+- lobby
+	- getClassList
+	- getClassLobby
+		if isShowLobby==true clases can listed
+	- getMainLobby
+
+- leaderBoard
+	- getClassLeaderBoard
+	- getGlobalLeaderBoard
+	
+- game
+	- getActiveGames
+	- createGame
+		- return socket.io Game ID 
+	- getQuestion
+		-gameMistake
+		-gameForm
+		-gameFinish
+		-gameHear
+		-gameChoose
+			-questionType
+			-example
+			-answers
+	- setAnswers
+	- setResult
+	- closeGame
+
+- complaint
+	- setComplaint
+	- banComplaintedUserInClass
+	- banComplaintedUserInUser
+	- banComplaintedUser

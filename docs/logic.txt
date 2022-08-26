@@ -1,0 +1,71 @@
+- class module 
+	- every user who over 10 level enable to open ONE class
+	- only creator can ban users
+	- creator can set password to class
+
+- main profile logic
+	- users can create avatar, user name, 
+	- USERS CAN NOT CHAT EACH OTHER, there no private message
+	- user enable to add/remove/ban user
+	- every user has profile dashboard 
+		- settings (avatar vs)
+		- friends
+			- invitations on friend
+		- points
+		- invitations on class
+
+
+- main achievement logic
+	- game has 500 level, all users start whit level 1
+	- every 10 level one language level 
+		- 0-100 A1
+		- 101-200 A2
+		- 201-300 B1
+		- 301-400 B2
+		- 401-500 C1 
+	User enbale to play his/her word group RANDOM
+	- Daily achievement 
+		2-3 day,4-6 day,6-10 day, 10+ day, 30+ day
+
+- avatar logic
+- leader board logic
+	there 2 diffirent leader board, 
+		- class leader board
+		- global leader board
+
+- lobby logic
+	- class lobby
+	- main lobby
+
+- main game logic
+	there 3 diffirent game type
+	single, dual, class
+
+	- single 
+		user can play games on single
+			- user must to send answer under X secont (10 or 15 sn)
+	- dual
+		user can send invitation 
+		questions should send -/+ 50 point in avarage user points
+	- class 
+		questions should send -/+ 50 point in avarage user points
+	- points 
+		a1 and a2 points:
+			true answers 2 points
+			false answers -1 point
+		b1 and b2 points:
+			true answers 1 point
+			false answer -2 points
+		c1 points: 
+			true answers 1 point
+			false answer -3 points
+
+
+- game 1 FIND THE MISTAKE - in the example senttings there one or two mistake user find this mistake
+- game 2 FIND v1,v2,v3 form
+- game 3 FINISH the word
+- game 4 hear and write
+- game 5 choose correct word
+
+- bot logic
+- Ban user

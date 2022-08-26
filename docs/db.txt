@@ -1,0 +1,88 @@
+- user 
+	- id
+	- status 
+		1- active
+		2- have complaint -- inactiveUser
+		3- banned
+	- username
+	- isActive
+	- mail
+	- pass
+	- resetPassTolken
+	- resetPassTolkenCreateDate
+	- createDate
+	- countLastLoginDayNumberForDailyAchievement
+	- dailyAchievementCount
+		if today day number!=last login date
+			if today day number == countLastLoginDayNumberForDailyAchievement +1
+				dailyAchievemntCount++ 
+			else
+				dailyAchievemntCount = 1
+		else
+			updateLastLoginDate
+	- lastLoginDate
+	- avatarSettings
+	- bannedUser
+	- friendUser
+	- classIds
+	- activePoints
+	- warningComplaintId
+
+- class
+	- status
+		1- active
+		2- removed
+	- isShowLobby
+	- createdDate
+	- lastGameDate
+	- name
+		limited 30 char
+	- adminUser
+	- password
+	- desc
+	- users
+	- bannedUsers
+	- invitedUsers
+
+- words
+	- id
+	- word
+	- wordLevel
+		A1,A2,B1,B2,C1
+	- wordOrderNumber
+		(oxford universy most common word order)
+	- status 
+		1- active
+		2- hasNoExample
+		3- deleted
+	- phonetic
+	- audio
+	- origin
+	- example
+	- definition
+	- synonyms
+	- antonyms
+
+- game
+	- id
+	- gameType
+		- single
+		- dual
+		- class
+	- dualUserId
+	- classId
+	- socketId
+	- usersAveragePoint
+
+- complaint
+	- id
+	- date
+	- resultDate
+	- status 
+		1- waiting
+		2- result for ban user
+		3- result for warning
+		4- rejected complaint
+	- complaintedUserId
+	- complainingUserId
+	- desc
