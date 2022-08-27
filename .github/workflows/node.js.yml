@@ -38,4 +38,4 @@ jobs:
           cd /home/english-games-with-ayu-api
           git pull
           npm install
-          pm2 start index.js
+          pm2 start src/app.ts
