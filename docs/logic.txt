@@ -1,3 +1,7 @@
+I found cool and minimal file structure, I'll try this structure in this project
+this structure is : https://github.com/ChechaValerii/node-typescript-mongodb
+
+
 - class module 
 	- every user who over 10 level enable to open ONE class
 	- only creator can ban users

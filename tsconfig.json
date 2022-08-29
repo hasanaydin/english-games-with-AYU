@@ -1,26 +1,17 @@
 {
-  "compilerOptions": {
-    "allowJs": true, 
-    "esModuleInterop": true, 
-    "baseUrl": "./src", 
-    "paths": { 
-      "~/*": ["./*"]
+    "compilerOptions": {
+        "outDir": "./build/",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "target": "es6",
+        "sourceMap": true,
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ]
     },
-    "module": "commonjs", 
-    "target": "es5", 
-    "lib": ["es2021"], 
-    "outDir": "build", 
-    "strict": true, 
-    "noImplicitAny": false, 
-    "resolveJsonModule": true,
-    "moduleResolution": "node", 
-    "forceConsistentCasingInFileNames": true 
-  },
-  "compileOnSave": true, 
-  "include": [ 
-    "src/**/*" 
-  ],
-  "exclude": [ 
-    "node_modules"
-  ]
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules"]
 }
